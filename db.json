@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "username": "gloria",
+      "id": "1"
+    }
+  ],
+  "tareas": [
+    {
+      "text": "nueva tarea",
+      "user": "gloria",
+      "id": "1"
+    }
+  ]
+}
