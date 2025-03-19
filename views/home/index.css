@@ -30,6 +30,19 @@ body {
   display: none;
 }
 
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.notification.success {
+  background-color: #4caf50;
+}
+
+.notification.error {
+  background-color: #f44336;
+}
+
 #container {
   display: flex;
   flex-direction: column;

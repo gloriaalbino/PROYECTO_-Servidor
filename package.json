@@ -3,13 +3,26 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": "json-server --watch db.json"
-
+    "server": "json-server --watch db.json",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "axios": "^1.8.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "json-server": "^1.0.0-beta.3",
+    "mongodb": "^6.14.2",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0",
+    "node": "^20.19.0",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

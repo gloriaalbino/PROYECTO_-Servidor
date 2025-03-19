@@ -21,15 +21,36 @@ body {
   background-color: #1e293b;
 }
 
-.notification {
+#notification-container {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
-  padding: 1rem;
-  background-color: #4338ca;
-  border-radius: 0.5rem;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  background-color: #444;
   color: white;
-  display: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.notification.success {
+  background-color: #4caf50;
+}
+
+.notification.error {
+  background-color: #f44336;
 }
 
 #container {
